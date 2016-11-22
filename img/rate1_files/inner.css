@@ -1,0 +1,53 @@
+.leftContentPane
+{
+	width: 200px;
+	float: left;
+}
+#RightContentArea
+{
+	float: right;
+	width: 780px;
+}
+.topContentPane
+{
+	float: right;
+	width: 780px;
+	margin-bottom: 10px;
+}
+.contentPane
+{
+	float: left;
+	width: 430px;
+}
+.contentPane, .contentPane .Normal
+{
+	color: #333;
+}
+.rightContentPane
+{
+	float: right;
+	width: 300px;
+}
+.sidemenu
+{
+	
+}
+.sidemenu a
+{
+	text-transform: uppercase;
+	display: block;
+	margin-bottom: 2px;
+}
+#LowerContentArea
+{
+	/*height: 20px;*/
+}
+
+.sideFloatArea
+{
+	float: right;
+	margin-left: 10px;	
+	margin-bottom: 10px;
+}
+
+

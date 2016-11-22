@@ -1,0 +1,242 @@
+#nav
+{
+	font-family: 'Trebuchet MS', sans-serif;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+}
+.sf-menu
+{
+	/*position: absolute;
+	float: right;*/
+}
+
+/*Applies to all menu root items*/
+.sf-menu>li
+{
+	padding: 0;
+	/*border-left: 1px solid #fff;*/
+}
+.sf-menu>li:hover, .sf-menu>li.sfHover
+{
+	
+}
+.sf-menu>li a
+{
+	text-transform: uppercase;
+	color: #333;
+	font-size: 17px;
+	margin: 0;
+	padding: 24px 11px;
+}
+.sf-menu>li:first-child, .sf-menu>li:first-child
+{
+	/*border-left: none;*/
+}
+.sf-menu>li.sfHover>a, .sf-menu>li>a:hover
+{
+	background: #39A0A0;
+	color: #fff;
+}
+/* Root menu item hover*/
+.sf-menu>li.sfHover, .sf-menu>li:hover, .sf-menu>li.current:hover
+{
+    z-index: 11;
+}
+/* Submenu items */
+.sf-menu>li:hover li, .sf-menu>li.sfHover li
+{
+	background-color: #fff;
+	border: 1px solid #DCDCDC;
+	border-top: none;
+	outline: none;
+}
+.sf-menu>li:hover li:first-child, .sf-menu>li.sfHover li:first-child
+{
+	border-top: 1px solid #DCDCDC;
+}
+.sf-menu>li:hover li a, .sf-menu>li.sfHover li a
+{
+	padding: 10px 15px;
+	color: #333;
+	text-transform: capitalize;
+	font-size: 16px;
+	/*text-transform: uppercase;*/
+	border: 0;
+}
+/* Submenu item hover */
+.sf-menu>li:hover li.sfHover, .sf-menu>li.sfHover li.sfHover,
+.sf-menu>li:hover li:hover, .sf-menu>li.sfHover li:hover
+{
+	background: #39A0A0;
+}
+.sf-menu>li.sfHover li.sfHover>a, .sf-menu>li.sfHover li:hover>a
+.sf-menu>li:hover li.sfHover>a, .sf-menu>li:hover li:hover>a
+{
+	color: #fff;
+}
+
+/*** ESSENTIAL STYLES ***/
+
+
+
+.sf-menu, .sf-menu * {
+	margin:			0;
+	padding:		0;
+	list-style:		none;
+	
+}
+.homenav .sf-menu > li
+{
+	
+}
+.sf-menu {
+	line-height:	1.0;
+}
+.sf-menu ul {
+	position:		absolute;
+	top:			-999em;
+	width:			16em; /* left offset of submenus need to match (see below) */
+}
+.sf-menu ul li {
+	width:			100%;
+}
+.sf-menu li:hover {
+	visibility:		inherit; /* fixes IE7 'sticky bug' */
+}
+.sf-menu li {
+	float:			left;
+	position:		relative;
+}
+.sf-menu a {
+	display:		block;
+	position:		relative;
+}
+.sf-menu li:hover ul,
+.sf-menu li.sfHover ul {
+	left:			-2px;
+	top:			65px; /* match top ul list item height */
+	z-index:		99;
+}
+ul.sf-menu li:hover li ul,
+ul.sf-menu li.sfHover li ul {
+	top:			-999em;
+}
+ul.sf-menu li li:hover ul,
+ul.sf-menu li li.sfHover ul {
+	left:			16em; /* match ul width */
+	top:			0;
+}
+ul.sf-menu li li:hover li ul,
+ul.sf-menu li li.sfHover li ul {
+	top:			-999em;
+}
+ul.sf-menu li li li:hover ul,
+ul.sf-menu li li li.sfHover ul {
+	left:			16em; /* match ul width */
+	top:			0;
+}
+.sf-menu a {
+	text-decoration: none;
+}
+.sf-sub-indicator
+{
+	display: none;
+}
+
+@media screen and (max-width: 1160px){
+	.sf-menu>li a
+	{
+		padding: 20px 14px 21px
+	}
+}
+@media screen and (max-width: 1024px){
+	/*.sf-menu li
+	{
+		width: 33%;
+		text-align: center;
+		height: 54px;
+	}
+	.sf-menu>li a
+	{
+		padding: 17px 15px 18px;
+	}
+	.sf-menu li:hover ul, .sf-menu li.sfHover ul
+	{
+		width: 100%;
+	}
+	.sf-menu li:nth-child(5) a
+	{
+		/*padding: 8px 15px;*/
+	}
+	.es #NavArea .sf-menu>li a
+	{
+		padding: 20px 8px 21px;
+	}
+}
+
+/*
+@media screen and (max-width: 931px){
+	.sf-menu>li a
+	{
+		font-size: 15px;
+	}
+}
+@media screen and (max-width: 851px){
+	.sf-menu>li a
+	{
+		font-size: 13px;
+	}
+}
+
+@media screen and (max-width: 785px){
+	#DesktopNav
+	{
+		display: none;
+	}
+	#MobileNav
+	{
+		display: block;
+	}
+	#PageSelectMenu
+	{
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 42px;
+		background: none;
+		color: transparent;
+		
+		appearance: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		-o-appearance: none;
+		
+		border: none;
+		outline: none;
+		z-index: 10;
+	}
+	#PageSelectMenuButton
+	{
+		position: relative;
+		z-index: 9;
+		width: 90px;
+		height: auto;
+		margin: 0 auto;
+		margin-top: 0px;
+		margin-bottom: 1px;
+		text-align: center;
+		font-size: 20px;
+		color: #fff;
+		background: #323231;
+		border: 2px #F5F1E9 solid;
+		-webkit-border-radius: 10px;
+		-moz-border-radius:    10px;
+		border-radius:         10px;
+		padding-top: 10px;
+		min-height: 30px;
+	}
+}
+*/
+
+
+

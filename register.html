@@ -1,0 +1,178 @@
+<html>
+				<head>
+				<title>BigTime ARS</title>
+				<link rel="stylesheet" type="text/css"href="css/base.css"/>
+				<link rel="stylesheet" type="text/css"href="css/bootstrap.css"/>
+				<link rel="stylesheet" type="text/css"href="css/w3.css"/>
+				</head>
+				<body>
+					<div class="w3-row">
+						<div class="w3-container w3-khaki">
+							<h1 class="w3-text w3-center">AIRLINE RESERVATION AND TICKETING SYSTEM</h1>
+						</div>
+						<div class="w3-container w3-teal">
+							<div class="w3-container">
+								<ul class="w3-navbar">
+									<li><a href="you.html">Home</a></li>
+									<li><a href="see.html">Registration</a></li>
+									<li><a href="tra.html">Travel now</a></li>
+									<li><a href="contact.html">Contact Us</a></li>
+									<li><a href="help.html">Help</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="w3-container w3-card-4 w3-round-xxlarge" 
+						style="margin-left:auto;margin-right:auto;width:60%;margin-top:4%;">
+							<h3 class="w3-text w3-center">
+								Registration Form
+							</h3>
+							<hr>
+							<form class="w3-form" method="post" action="php/register.php">
+								<form method="POST" action="index.php"/>
+								<label class="w3-label">Name</label>
+								<input type="text" name="name" placeholder="Name"class="w3-input w3-border"/><br>
+								<label class="w3-label">First name</label>
+								<input type="text" name="fname" placeholder="firstname"class="w3-input w3-border"/><br
+								<label class="w3-label">Email</label>
+								<input type="text" name="email" placeholder="Email"class="w3-input w3-border"/><br>
+								
+								<label class="w3-label">password</label>
+								<input type="password" name="password" placeholder="password"class="w3-input w3-border"/><br>
+								<label class="w3-label">Phone Number</label>
+								<input type="text" name="phone_number" placeholder="phone number"class="w3-input w3-border"/><br>
+								<label class="w3-label">Next of Kin</label>
+								<input type="text" name="next_of_kin" placeholder="Next of Kin"class="w3-input w3-border"/><br>
+								<label class="w3-label">Residence Address at the source</label><br>
+								<input type="text"  name="residence_address" placeholder="residence address"class="w3-input w3-border"/>
+								<label class="w3-label">Residence Address at the destination</label>
+								<input type="text"  name="destination_address"placeholder="residence address"class="w3-input w3-border"/>
+								<br>
+								<label class="w3-label">Select your Source</label>
+								<select name="source" class="w3-select w3-border">
+									<option disabled>--Choose your source--</option>
+									<option>Source</option>
+									<option>Ghana</option>
+									<option>Togo</option>
+									<option>Senegal</option>
+									<option>Argentina</option>
+									<option>England</option>
+									<option>Ukrain</option>
+									<option>Spain</option>
+									<option>Mali</option>
+									<option>Uganda</option>
+									<option>Libya</option>
+								</select><br><br>
+
+								<label class="w3-label">Select your destination</label>
+								<select name="destination" class="w3-select w3-border">
+									<option disabled>--Choose Your Destination--</option>
+									<option>Destination</option>
+									<option>London</option>
+									<option>Bucharest</option>
+									<option>Sao paulo</option>
+									<option>Venice</option>
+									<option>Qatar</option>
+									<option>Dubai</option>
+									<option>Saudi</option>
+									<option>Isreal</option>
+									<option>United Kingdom</option>
+									<option>Germany</option>
+								</select><br><br>
+
+								<label class="w3-label">Select Date</label>
+								<select name="day" class="w3-border">
+									<option disabled>--Choose Date--</option>
+									<option>Day</option>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+									<option>6</option>
+									<option>7</option>
+									<option>8</option>
+									<option>9</option>
+									<option>10</option>
+									<option>11</option>
+									<option>12</option>
+									<option>13</option>
+									<option>14</option>
+									<option>15</option>
+									<option>16</option>
+									<option>17</option>
+									<option>18</option>
+									<option>19</option>
+									<option>20</option>
+									<option>21</option>
+									<option>22</option>
+									<option>23</option>
+									<option>24</option>
+									<option>25</option>
+									<option>26</option>
+									<option>27</option>
+									<option>28</option>
+									<option>29</option>
+									<option>30</option>
+									<option>31</option>
+								</select>
+
+
+									<label class="w3-label">Select Date</label>
+								<select name="month" class="w3-border">
+									<option disabled>--Month--</option>
+									<option>Month</option>
+									<option>Jan</option>
+									<option>Feb</option>
+									<option>Mar</option>
+									<option>Apr</option>
+									<option>May</option>
+									<option>Jun</option>
+									<option>Jul</option>
+									<option>Aug</option>
+									<option>Sep</option>
+									<option>Oct</option>
+									<option>Nov</option>
+									<option>Dec</option>
+								</select>
+
+								<label class="w3-label">Select Year</label>
+								<select name="year" class="w3-border">
+									<option disabled>--Year--</option>
+									<option>Year</option>
+									<option>2001</option>
+									<option>2002</option>
+									<option>2003</option>
+									<option>2004</option>
+									<option>2005</option>
+									<option>2006</option>
+									<option>2007</option>
+									<option>2008</option>
+									<option>2009</option>
+									<option>2010</option>
+									<option>2011</option>
+									<option>2012</option>
+									<option>2013</option>
+								</select>
+
+
+
+								<input type="submit" value="Register" name="submit"
+								 class="w3-light-blue w3-btn w3-btn-block w3-hover-teal">
+							</form>
+						</div>
+
+						<footer class="w3-container  w3-teal" style="margin-top:5%;">
+							<div class="w3-container">
+								<ul class="w3-ul">
+									<li>Facebook</li>
+									<li>Istagram</li>
+									<li>Watsapp</li>
+									<li>Twitter</li>
+								</ul>
+							</div>
+							<div><p class="w3-small w3-right">Copyright &copy; 2012-2016. Weddle.inc.</p></div>
+						</footer>
+					</div>
+				<script src="js/bootstrap.js"></script>
+				</body>
+			</html>

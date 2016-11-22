@@ -1,0 +1,312 @@
+@charset "utf-8";
+/* CSS Document */
+/*@import url("menu.css");*/
+@import url("style.css");
+
+/* Main framework borders LOL */
+.body
+{
+	padding: 0;
+	margin: 0;
+	background-color: #DBA154;
+}
+#mainTable, #mainTD, #mainDiv
+{
+	width: 100%;
+}
+#mainBG
+{
+	overflow: hidden;
+}
+#HeaderArea
+{
+	
+}
+#BannerArea
+{
+	background: #F6E8D6;
+	height: 430px;
+	width: 100%;
+	position: relative;
+}
+.bannerPane
+{
+	margin: auto;
+}
+#NavArea
+{
+	background: #fff;
+	position: relative;
+	height: 65px;
+	z-index: 1001;
+}
+#NavTopBar
+{
+	height: 5px;
+	width: 100%;
+	background: rgba(246,244,239,0.7);
+	position: absolute;
+	bottom: 0px;
+	z-index: 1001;
+}
+#Logo
+{
+	position: absolute;
+	top: 10px;
+	left: -6px;
+	z-index: 10;
+}
+.topPane
+{
+	position: absolute;
+	right: 0px;
+	z-index: 10;
+	
+	right: 23px;
+	top: 13px;
+}
+#DesktopNav
+{
+	
+}
+#ContentArea
+{
+	
+}
+#MainContentArea
+{
+	
+}
+#TopContentArea
+{
+	background: #EBE7DB;
+	background: #F1E7DB;
+	border-top: 5px solid #F6F4EF;
+	padding: 20px 0px;
+}
+
+
+
+.circleLinkCol
+{
+	float: left;
+	width: 27%;
+	padding: 30px;
+	text-align: center;
+}
+
+
+.circleTextDiv
+{
+	
+}
+.circleTextImg
+{
+	float: left;
+}
+.circleText
+{
+	float: right;
+	width: 200px;
+	margin-right: 5px;
+	
+	line-height: 15px;
+	font-size: 13px;
+}
+.circleText img
+{
+	/*padding-bottom: 10px;*/
+	position: absolute;
+	left: 0;
+}
+.circleText h3
+{
+	font-weight: normal;
+	position: relative;
+}
+
+
+
+.SidePackageDiv
+{
+	padding-bottom: 30px;
+}
+.SidePackageImg
+{
+	float: left;
+	width: 35%;
+	padding-top: 5px;
+}
+.SidePackageImg img
+{
+	background: #fff;
+	background: rgba(255, 255, 255, 0.7);
+	padding: 5px;
+}
+.SidePackageText
+{
+	float: right;
+	width: 63%
+}
+
+
+
+
+
+
+#CenterContentArea
+{
+	background: #39A0A0;
+	padding: 20px 0;
+	border-top: 5px solid #76B8B4;
+	border-bottom: 5px solid #76B8B4;
+}
+.contentPane, .contentPane .Normal
+{
+	color: #fff;
+}
+#LowerContentArea
+{
+	background: #EBE7DB;
+	background: #F1E7DB;
+	padding: 35px 0 0;
+}
+.columnPane 
+{
+	width: 33%;
+	padding-left: 5px;
+	float: left;
+}
+.columnPane:first-child
+{
+	padding-left: 0px;
+}
+.sharePane
+{
+	margin-top: 30px;
+	width: 430px;
+	float: right;
+	margin-right:-5px;
+}
+
+#FooterArea
+{
+	background: #DBA154;
+	padding-top: 35px;
+	border-top: 5px solid #E4CAA2;
+}
+.leftFooterPane
+{
+	float: left;
+	width: 200px;
+}
+.centerFooterPane
+{
+	float: left;
+	width: 170px;
+}
+.rightFooterPane
+{
+	float: left;
+	width: 545px;
+}
+.footerPaneBorder
+{
+	width: 1px;
+	height: 245px;
+	background: #F7C1B6;
+	margin: 0 20px;
+	float: left;
+}
+.colDiv
+{
+	float: left;
+	width: 175px;
+	padding-left: 10px;
+}
+.colDiv:first-child
+{
+	padding-left: 0px;
+}
+.colDiv h6
+{
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+.colDiv .footerlink
+{
+	display: block;
+	padding-left: 8px;
+}
+.TAquoteDiv
+{
+	padding-top: 20px;
+}
+#BDRatesTable
+{
+	width: auto !important;
+}
+
+#CopyrightArea
+{
+	
+}
+#CopyrightArea
+{
+	color: #fff;
+	font-size: 0.8em;
+	padding-top: 20px;
+	text-align: center;
+}
+.DnnModule
+{
+	min-height: 30px;
+}
+.DNNEmptyPane
+{
+	display: none !important;
+}
+#Login
+{
+	text-align: center;
+}
+
+
+/* Utility Styling */
+.center
+{
+	margin: 0 auto;
+}
+.wrapper
+{
+	width: 1000px;
+	position: relative;
+}
+.clearDiv
+{
+	width: 100%;
+	clear: both;
+	height: 0;
+}
+.contentArea
+{
+	min-height: 30px;
+}
+
+#Login a.login:link,
+#Login a.login:active,
+#Login a.login:visited
+{
+	color: transparent;
+	padding: 0;
+	display: inline-block;
+}
+#Login a.login:hover
+{
+	color: #fff;
+}
+
+.hide, .showInMobile, #MobileNav
+{
+	display:none;
+}
